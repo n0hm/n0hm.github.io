@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>第4世代起動時刻自動計算ツール</title>
+<script type="text/javascript" src="./calc_time.js"></script>
+</head>
+<body>
+<h2>第4世代起動時刻自動計算ツール</h2>
+<ul>
+<li>起動時刻を手計算するのが面倒なので作りました</li>
+</ul>
+<form action="#" name="form1">
+<table>
+<tr>
+<td>目当ての初期Seed:</td>
+<td align="right">0x</td>
+<td><input type="text" name="field1" size="8" value=""></td>
+</tr>
+<tr>
+<td>空白時間:</td>
+<td></td>
+<td><input type="text" name="field2" size="8" value="270">[F]</td>
+</tr>
+<td>ソフト起動時の秒:</td>
+<td></td>
+<td><input type="text" name="field3" size="8" value="10">[秒]</td>
+</tr>
+</tr>
+<td>年数調整（偶奇ずれ回避用）:</td>
+<td></td>
+<td><input type="text" name="field4" size="8" value="0">[年]</td>
+</tr>
+</table>
+<input type="button" value="実行" onclick="OnButtonClick();"/><br/>
+<br>
+<h3>結果</h3>
+<textarea name="textarea1" style="font-size:large" value="" cols="50" rows=20 maxlength="10"></textarea>
+</form>
+<h3>使用にあたって</h3>
+<ul>
+<li>サポートはできませんのでわかる人のみ使ってください</li>
+<li>手計算で算出した起動時刻とは大抵の場合で異なります</li>
+<li>有名な初期Seedでテストはしていますが変な結果が出力されるかもしれません</li>
+<li>結果から再現される初期Seedと一致しているか確認してください。一致していれば多分合ってます</li>
+<li>空白時間は場合によって異なりますので微調整してください</li>
+</ul>
+</body>
+</html>

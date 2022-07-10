@@ -1,34 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-<meta charset="utf-8"/>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>第4世代起動時刻自動計算ツール</title>
-<script type="text/javascript" src="./calc_time.js"></script>
+<!-- MathJax -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+</script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+<!-- End MathJax -->
 </head>
 <body>
-<h2>第4世代起動時刻自動計算ツール</h2>
-<ul>
-<li>起動時刻を手計算するのが面倒なので作りました</li>
-</ul>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">日本語</div>
+<div class="menu-item"><a href="index_ja.html">nohm（のーむ）</a></div>
+<div class="menu-item"><a href="history_ja.html">りれき</a></div>
+<div class="menu-item"><a href="works_ja.html">つくったもの</a></div>
+<div class="menu-item"><a href="memo_ja.html">メモ</a></div>
+<div class="menu-category">English</div>
+<div class="menu-item"><a href="index.html" class="current">nohm</a></div>
+<div class="menu-item"><a href="works.html">Works</a></div>
+<div class="menu-item"><a href="memo.html">Memo</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+
+<h1>第4世代起動時刻自動計算ツール</h2></div>
+<p>起動時刻を手計算するのが面倒なので作りました</p>
+<h3>入力</h3>
 <form action="#" name="form1">
 <table>
 <tr>
 <td>目当ての初期Seed:</td>
-<td align="right">0x</td>
-<td><input type="text" name="field1" size="8" value=""></td>
+<td>0x<input type="text" name="field1" size="8" value=""></td>
 </tr>
 <tr>
 <td>空白時間:</td>
-<td></td>
 <td><input type="text" name="field2" size="8" value="270">[F]</td>
 </tr>
 <td>ソフト起動時の秒:</td>
-<td></td>
 <td><input type="text" name="field3" size="8" value="10">[秒]</td>
 </tr>
 </tr>
 <td>年数調整（偶奇ずれ回避用）:</td>
-<td></td>
 <td><input type="text" name="field4" size="8" value="0">[年]</td>
 </tr>
 </table>
@@ -45,5 +67,13 @@
 <li>結果から再現される初期Seedと一致しているか確認してください。一致していれば多分合ってます</li>
 <li>空白時間は場合によって異なりますので微調整してください</li>
 </ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 2022-07-10 05:31:56 UTC.
+</div>
+</div>
+</td>
+</tr>
+</table>
 </body>
 </html>

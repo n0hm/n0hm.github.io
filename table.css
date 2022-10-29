@@ -1,0 +1,30 @@
+/* Default css file for tables. */
+
+#countries tr.r1 {
+    font-weight: 600;
+}
+
+#countries tr:nth-child(even) {background-color: #f6f8fa;}
+
+#rance tr.r1 {
+    font-weight: 600;
+}
+
+#rance tr:nth-child(even) {background-color: #f6f8fa;}
+
+@media (prefers-color-scheme: dark) {
+    #rance tr:nth-child(even) {background-color: #1a1a1a;}
+}
+
+#rance td:nth-of-type(5) {
+    line-height: 1.5;
+    text-align: left;
+}
+
+#rance td:nth-of-type(1) {
+    line-height: 1;
+}
+
+#rance td:nth-of-type(4) {
+    line-height: 1.5;
+}

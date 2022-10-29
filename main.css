@@ -134,6 +134,13 @@ tt {
 	color: black;
 }
 
+@media (prefers-color-scheme: dark) {
+	tt {
+		background: #1a1a1a;
+		color: white;
+	}
+}
+
 pre, tt {
 	padding: 5px;
 	padding-top: 2px;
@@ -374,6 +381,7 @@ div.infoblock > div.blockcontent {
 	color: #f9c513;
 }
 
+
 div.blockcontent p + ul, div.blockcontent p + ol {
 	margin-top: 0.4em;
 }
@@ -394,6 +402,12 @@ div.codeblock > div.blockcontent {
 	border: none;
 	border-radius: 10px;
 	background: #f6f8fa;
+}
+
+@media (prefers-color-scheme: dark) {
+	div.codeblock > div.blockcontent {
+		background: #1a1a1a;
+	}
 }
 
 span.pycommand {
@@ -470,16 +484,14 @@ td {
 	line-height: 2;
 }
 
+@media (prefers-color-scheme: dark) {
+	td {
+		border: 1px solid #616161;
+	}
+}
 table + table {
 	margin-top: 1em;
 }
-
-#countries tr.r1 {
-    font-weight: 600;
-}
-
-#countries tr:nth-child(even) {background-color: #f6f8fa;}
-
 
 
 div#text-img-container {
